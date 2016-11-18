@@ -1,0 +1,58 @@
+/*Classes are named according to BEM, but without appropriate positioning classes*/
+html {
+	font-size: 10px;	
+}
+@mixin html--sm {
+	html {
+		font-size: 12px;	
+	}	
+}
+@mixin html--md {
+	html {
+		font-size: 14px;	
+	}	
+}
+@mixin html--lg {
+	html {
+		font-size: 16px;	
+	}	
+}
+@mixin html--lgC {
+	html {
+		font-size: 18px;	
+	}	
+}
+body {
+	margin: 0;
+	padding: 0;	
+}
+.main-container {
+	width: 100%;
+	overflow: hidden;
+}
+.clear-fix {
+	clear: both;
+}
+.clear-fix::after,
+.clear-fix::before {
+	display: table;
+  	content: " ";
+  	clear: both;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "layout/header";
+@import "layout/news";
+@import "layout/about-company";
+@import "layout/market";
+@import "layout/members";
+@import "layout/directors";
+@import "layout/footer";
+@import "layout/media-queries";

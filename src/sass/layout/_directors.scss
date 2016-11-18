@@ -1,0 +1,199 @@
+.directors {
+	position: relative;
+	margin: 0 -25%;
+	padding-top: 2rem;		
+	z-index: 30;
+}
+@mixin directors--sm {
+	.directors {
+		padding-top: 9rem;
+		transform-origin: left;
+		transform: rotate(-2.9deg);	
+	}
+	.directors-wrapper {
+		transform: rotate(2.9deg);
+	}
+}
+.directors_default-theme {
+	background-color: $menu-back-color;
+}
+.directors-wrapper {
+	width: 62%;
+	margin: 0 auto;
+}
+@mixin directors-wrapper--md {
+	.directors-wrapper {
+		width: $content-width-md;
+	}
+}
+@mixin directors-wrapper--lg {
+	.directors-wrapper {
+		width: $content-width-lg;
+	}
+}
+@mixin directors-wrapper--lgC {
+	.directors-wrapper {
+		width: $content-width-lgC;
+	}
+}
+.creation-and-brief-information {
+	margin: 1rem 0;	
+}
+@mixin creation-and-brief-information--sm {
+	.creation-and-brief-information {
+		margin: 4rem 0;	
+	}
+}
+.directors-column {
+	display: block;
+	width: 90%;
+	text-align: center;
+}
+.directors-column-title {
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(32px);
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	text-align: left;
+}
+@mixin directors-column-title--sm {
+	.directors-column-title {
+		margin: 0 0 2rem;
+	}
+}
+.directors-column-title_default-theme {
+	color: $menu-text-color;
+}
+.directors-column-text {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(16px);
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: left;	
+}
+.directors-column-text_default-theme  {
+	color: $menu-text-color;
+}
+.directors__title_default-theme {
+	color: $menu-text-color;
+	margin: 2rem 0;
+}
+.directors-row {		
+	margin: 0 0 3rem 0;
+	text-align: center;
+}
+@mixin directors-row--lg {
+	.directors-row {
+		margin: 0 -1rem 3rem -1rem;
+	}
+}
+.director {
+	display: inline-block;
+	width: (278px/16px)+rem;
+	height: (394px/16px)+rem;
+	border-radius: 5px;
+	vertical-align: top;
+	text-align: center;
+	margin: 1.5rem .5rem;
+}
+.director_default-theme {
+	background-color: $market-back-color;
+}
+.director__company-logo-container {
+	width: 100%;	
+	line-height: (200px/16px)+rem;
+	text-align: center;
+}
+.director__company-logo {
+	max-width: 100%;
+	max-width: 90%;
+	max-height: (200px/16px)+rem;
+	max-height: (190px/16px)+rem;
+	vertical-align: middle;
+}
+.director__name,
+.director__first-name {	
+	padding: 0 (10px/16px)+rem;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(18px);
+	font-weight: bold;
+	line-height: 1.333;
+	margin: 0;
+}
+.director__name {
+	text-transform: uppercase;
+}
+.director__name_default-theme {
+	color: $menu-text-color;
+}
+.director__post {
+	height: (36px/16px)+rem;
+	padding: (16px/16px)+rem (20px/16px)+rem;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(16px);
+	font-weight: 300;
+	line-height: 1.125;
+	margin: 0;
+}
+.director__post_default-theme {
+	color: $menu-text-color;
+}
+.director__company-wrapper {
+	display: table;
+	width: 100%;
+	height: (64px/16px)+rem;
+}
+.director__company-wrapper_default-theme {
+	background-color: $menu-back-color;
+}
+.director__company {	
+	display: table-cell; 
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(16px);
+	font-weight: 300;
+	line-height: 1.125;	
+	vertical-align: middle;
+}
+.director__company_default-theme {
+	color: $menu-text-color;	
+}
+.executive-director {
+	display: inline-block;
+	padding: 1.5rem 0;
+	border-radius: 5px;
+	vertical-align: top;
+}
+.aims-and-tasks {
+	margin: 4rem 0;
+}
+.directors-column-image {
+	width: auto;
+	max-height: 200px;
+}
+@mixin directors-column-image--sm {
+	.directors-column-image {
+		width: 100%;
+		max-height: none;
+	}
+}
+@mixin directors__columns--sm {
+	.directors-column {
+		width: (450px/16px)+rem;
+	}
+	.creation,
+	.aims {
+		float: left;
+	}
+	.brief-information,
+	.tasks {
+		float: right;
+	}
+}
+@mixin directors__columns--md {
+	.directors-column {
+		width: (500px/16px)+rem;
+	}
+}

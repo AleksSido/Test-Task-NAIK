@@ -1,0 +1,57 @@
+@media (min-width: (768px/16px)+em) {
+	@include html--sm;	
+	@include hamburger-menu-icon--sm;
+	@include menu--sm;
+	@include menu__item--sm;
+	@include header-image__heading1--sm;
+	@include news--sm;
+	@include news-wrapper--sm;
+	@include excerpt--sm;
+	@include news__bottom-div--sm;
+	@include about-company--sm;	
+	@include about-company-column--sm;
+	@include about-company__divider--sm;
+	@include members-container--sm;
+	@include market__bottom-div--sm;
+	@include directors--sm;
+	@include creation-and-brief-information--sm;
+	@include directors-column-title--sm;
+	@include directors__columns--sm;
+	@include directors-column-image--sm;
+}
+@media (min-width: (992px/16px)+em) {
+	@include html--md;	
+	@include menu-wrapper--md;
+	@include news-wrapper--md;
+	@include about-company-wrapper--md;
+	@include market-wrapper--md;
+	@include directors-wrapper--md;
+	@include directors__columns--md;
+	@include footer-wrapper--md;
+	@include footer__copyright--md;
+	@include footer__menu--md;
+}
+@media (min-width: (1200px/16px)+em) {
+	@include html--lg;
+	@include menu-wrapper--lg;
+	@include news-wrapper--lg;
+	@include news__excerpts-container--lg
+	@include excerpt--lg;
+	@include about-company-wrapper--lg;
+	@include about-company__divider--lg
+	@include market-wrapper--lg
+	@include directors-wrapper--lg
+	@include directors-row--lg
+	@include footer-wrapper--lg
+}
+@media (min-width: (1620px/16px)+em) {
+	@include html--lgC;
+	@include menu-wrapper--lgC;
+	@include news-wrapper--lgC;	
+	@include news__bottom-div--lgC;	
+	@include about-company-wrapper--lgC;
+	@include market-wrapper--lgC;
+	@include market__bottom-div--lgC;
+	@include directors-wrapper--lgC;
+	@include footer-wrapper--lgC;
+}

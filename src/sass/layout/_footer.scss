@@ -1,0 +1,120 @@
+.footer {
+	padding: 2rem 0;
+}
+.footer_default-theme {
+	background-color: $footer-back-color;
+}
+.footer-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+@mixin footer-wrapper--md {
+	.footer-wrapper {
+		width: $content-width-md;
+	}
+}
+@mixin footer-wrapper--lg {
+	.footer-wrapper {
+		width: $content-width-lg;
+	}
+}
+@mixin footer-wrapper--lgC {
+	.footer-wrapper {
+		width: $content-width-lgC;
+	}
+}
+.footer-row {
+	margin-top: 2rem;
+}
+.footer__site-title {	
+	float: left;
+	width: 33%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(18px);
+	font-weight: bold;
+	text-transform: uppercase;
+    line-height: 1.389;
+}
+.footer__site-title_default-theme {
+	color: $menu-back-color;
+}
+.contacts {
+	float: right;
+}
+.contacts__title {
+	margin: 0;
+	margin-bottom: .5rem;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(15px);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.contacts__title_default-theme {
+	color: $menu-back-color;
+}
+.contacts__text {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(13px);
+	font-weight: 300;
+	line-height: 1.8;
+} 
+.contacts__text_default-theme {
+	color: $menu-back-color;
+}
+.contacts__contact-person {
+	font-weight: normal;
+}
+.contacts__text-link_default-theme {
+	color: $menu-back-color;
+}
+.footer__copyright {	
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(13px);
+	font-weight: 300;
+	text-align: center;
+}
+@mixin footer__copyright--md {
+	.footer__copyright {
+		float: left;
+		text-align: left;
+	}
+}
+.footer__copyright_default-theme {
+	color: $menu-text-color;
+}
+.footer__menu {	
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(13px);
+	font-weight: 300;
+	text-align: center;
+}
+@mixin footer__menu--md {
+	.footer__menu {
+		float: right;
+		text-align: left;
+	}
+}
+.footer__menu-link {
+	font-family: 'Open Sans', sans-serif;
+	@include font-size(13px);
+	font-weight: 300;
+}
+.footer__menu-link::before {
+	display: inline;
+	content: ' ⋅ ';
+	@include font-size(13px);
+}
+.footer__menu-link:first-child:before {
+	display: inline;
+	content: '';
+	@include font-size(13px);
+}
+.footer__menu-link_default-theme {
+	color: $menu-text-color;
+	&:hover {
+		color: $menu-back-color;
+	}
+}

@@ -1,0 +1,130 @@
+.hamburger-menu-icon {
+	display: block;
+	width: 18px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 1px solid;
+	border-radius: 5px;
+	cursor: pointer;	
+}
+@mixin hamburger-menu-icon--sm {
+	.hamburger-menu-icon {
+		display: none;
+	}
+}
+.hamburger-menu-icon_default-theme {
+	background-color: $menu-back-color;
+	border-color: $menu-text-color;
+	&:hover {
+		background-color: $footer-back-color;
+	}
+}
+.hamburger-menu-icon__bar {
+	display: block;
+	width: 18px;
+	height: 2px;
+	margin: 3px 0;
+}
+.hamburger-menu-icon__bar_default-theme {
+	background-color: $footer-back-color;
+}
+.hamburger-menu-icon_default-theme:hover > .hamburger-menu-icon__bar_default-theme {
+	background-color: $menu-back-color;
+}
+.menu {
+	display: none;
+	width: 100%;
+}
+@mixin menu--sm {
+	.menu {
+		display: block;
+	}
+}
+.menu-wrapper {
+	width: 100%;
+	margin: 0;	
+}
+@mixin menu-wrapper--md {
+	.menu-wrapper {
+		width: $content-width-md;
+		margin: 0 auto;
+	}
+}
+@mixin menu-wrapper--lg {
+	.menu-wrapper {
+		width: $content-width-lg;
+	}
+}
+@mixin menu-wrapper--lgC {
+	.menu-wrapper {
+		width: $content-width-lgC;
+	}
+}
+.menu__list {
+	margin: 0;
+	padding: 0;
+}
+.menu__item {
+	display: block;
+	float: none;	
+	border-top: 1px solid;
+	border-right: 0px solid;
+}
+@mixin menu__item--sm {
+	.menu__item {
+		display: inline-block;
+		float: left;	
+		border-top: 0px solid;
+		border-right: 1px solid;
+	}
+	.menu__item_default-theme {
+		border-color: $market-back-color;
+	}
+}
+.menu__item:last-child {
+	border-right: none;
+}
+.menu__item_default-theme {
+	border-color: $market-back-color;
+}
+.menu__link {
+	display: block;
+	padding: 2rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	@include font-size(13px);
+}
+.menu__link_default-theme {
+	color: $menu-text-color;
+	background-color: $menu-back-color;
+	&:hover {
+		color: $menu-back-color;
+		background-color: $menu-text-color;
+	}
+}
+.header-image__heading1 {
+	margin: 0;
+	padding: (54px/16px)+rem 50% (54px/16px)+rem (84px/2000px)*100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+@mixin header-image__heading1--sm {
+	.header-image__heading1 {
+		@include font-size(51px);
+		padding: (219px/16px)+rem 50% (360px/16px)+rem (84px/2000px)*100%;
+	}
+	.header-image__heading1_cut-view {
+		padding: (54px/16px)+rem 50% (54px/16px)+rem (84px/2000px)*100%;
+	}
+}
+.header-image__heading1_default-theme {
+	color: $menu-back-color;
+	background: #bfbfbf;
+	background: linear-gradient(to right, #bfbfbf 20%, #fff 50%, #fff 90%, #bfbfbf 95%), url('../images/back.jpg') center/cover;
+	background-blend-mode: multiply;
+}

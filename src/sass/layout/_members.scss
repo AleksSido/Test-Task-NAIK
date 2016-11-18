@@ -1,0 +1,130 @@
+.members {	
+	margin-top: -4rem;
+	padding-top: 12rem;
+}
+.members_default-theme {
+	background: url('../images/members.jpg') center/cover;
+	background-color: #404040;
+	background-blend-mode: multiply;
+}
+.members__container {
+	position: relative;
+	width: 100%;
+	height: 24vw;
+	margin: 0;
+	padding-bottom: 150px;
+	padding-bottom: 12vw;
+}
+.members__title_default-theme {
+	color: $menu-back-color;
+	margin-bottom: 4rem;
+}
+.members__slider {
+	position: absolute;
+	width: 80%;
+	width: 80vw;	
+	height: 6rem;
+	height: 20vw;
+	left: 10%;
+	right: 10%;
+	z-index: 20;
+}
+.members__slider-inner-wrapper {
+	/*width is established in js*/
+	height: 100%;
+	font-size: 0rem;
+	transition: 1s transform ease;
+}
+.member {
+	/*width is established in js*/
+	height: 6rem;
+	height: 20vw;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	/*margin is established in js*/
+	border: 2px solid;
+	padding: 1rem;
+	padding: 1vw;
+	line-height: 4rem;
+	line-height: 18vw;
+	text-align: center;
+	transition: .5s opacity ease;
+	/*opacity is established in js*/
+}
+.member_default-theme {
+	border-color: $menu-back-color;
+}
+.member__image {	
+	vertical-align: middle;
+	max-height: 4rem;
+	max-height: 18vw;
+	max-width: 80%;
+	max-width: 14vw;
+}
+.members__arrow-left-container,
+.members__arrow-right-container {
+	position: absolute;
+	top: 0;	
+	width: 10%;	
+	height: 6rem;
+	height: 20vw;
+	cursor: pointer;
+	z-index: 30;
+	&:hover {
+		opacity: .5;
+	}
+}
+.members__arrow-left-container {	
+	left: 0;	
+}
+.members__arrow-right-container {	
+	right: 0;	
+}
+.members__arrow-left,
+.members__arrow-right {
+	margin: 25%;
+	display: inline-block;	
+	width: 50%;
+	height: 3rem;
+	height: 15vw;	
+}
+.members__arrow-left {	
+	background: url('../images/arrows.png') left center/cover;
+}
+.members__arrow-right {	
+	background: url('../images/arrows.png') right center/cover;
+}
+@mixin members-container--sm {
+	.members__container {
+		height: 150px;
+		height: 12vw;		
+	}
+	.members__slider {
+		height: 10rem;
+		height: 10vw;
+	}
+	.member {
+		height: 10rem;
+		height: 10vw;
+		line-height: 8rem;
+		line-height: 8vw;
+	}
+	.member__image {	
+		max-height: 8rem;
+		max-height: 8vw;
+	
+		max-width: 80%;
+		max-width: 14vw;
+	}
+	.members__arrow-left-container,
+	.members__arrow-right-container {
+		height: 10rem;
+		height: 10vw;
+	}
+	.members__arrow-left,
+	.members__arrow-right {
+		height: 5rem;
+		height: 5vw;			
+	}
+}
